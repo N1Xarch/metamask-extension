@@ -6,9 +6,17 @@
  */
 
 @import './itcss/settings/index.scss';
+
 @import './itcss/tools/index.scss';
+
 @import './itcss/generic/index.scss';
-@import './itcss/base/index.scss';
+
 @import './itcss/objects/index.scss';
+
 @import './itcss/components/index.scss';
+
 @import './itcss/trumps/index.scss';
+
+@import '../../../node_modules/react-tooltip-component/dist/react-tooltip-component';
+
+@import '../../../node_modules/react-select/dist/react-select';

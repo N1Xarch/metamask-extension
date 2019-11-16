@@ -1,21 +1,61 @@
 .loading-overlay {
-  left: 0px;
-  z-index: 50;
-  position: absolute;
+  left: 0;
+  z-index: 51;
+  position: fixed;
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1 1 auto;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  background: rgba(255, 255, 255, .8);
 
-  @media screen and (max-width: 575px) {
-    margin-top: 56px;
-    height: calc(100% - 56px);
+  &__screen-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  @media screen and (min-width: 576px) {
-    margin-top: 75px;
-    height: calc(100% - 75px);
+  &__container {
+    position: absolute;
+    top: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  &__message {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 20px;
+    color: $manatee;
+  }
+
+  &__error-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160px;
+    justify-content: space-evenly;
+  }
+
+  &__error-buttons {
+    display: flex;
+    flex-direction: row;
+
+    button {
+      margin: 5px;
+    }
+  }
+
+  &__emoji {
+    font-size: 32px;
+  }
+}
+
+.spinner {
+  height: 58px;
+  width: 58px;
 }

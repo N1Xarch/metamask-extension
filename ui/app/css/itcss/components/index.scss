@@ -1,12 +1,13 @@
-@import './buttons.scss';
-
-@import './header.scss';
+@import '../../../components/ui/button/buttons';
+@import '../../../components/ui/dialog/dialog';
 
 @import './footer.scss';
 
 @import './network.scss';
 
 @import './modal.scss';
+
+@import './alert.scss';
 
 @import './newui-sections.scss';
 
@@ -19,8 +20,6 @@
 @import './loading-overlay.scss';
 
 // Balances
-@import './hero-balance.scss';
-
 @import './wallet-balance.scss';
 
 // Tx List and Sections
@@ -30,17 +29,11 @@
 
 @import './token-list.scss';
 
-@import './add-token.scss';
-
 @import './currency-display.scss';
-
-@import './account-menu.scss';
 
 @import './menu.scss';
 
 @import './gas-slider.scss';
-
-@import './settings.scss';
 
 @import './tab-bar.scss';
 
@@ -48,14 +41,14 @@
 
 @import './request-signature.scss';
 
-@import './account-dropdown-mini.scss';
+@import './account-details-dropdown.scss';
 
 @import './editable-label.scss';
+
+@import './pages/index.scss';
 
 @import './new-account.scss';
 
 @import './tooltip.scss';
 
-@import './welcome-screen.scss';
-
-@import './sender-to-recipient.scss';
+@import '../../../components/app/index';

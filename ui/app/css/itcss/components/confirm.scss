@@ -175,7 +175,6 @@
   margin-top: 12px;
   text-align: center;
   font-size: 40px;
-  font-weight: 300;
   line-height: 53px;
   flex: 0 0 auto;
 }
@@ -235,10 +234,25 @@ section .confirm-screen-account-number,
   padding-left: 35px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 300;
 
   &:not(:last-of-type) {
     border-bottom: 1px solid $alto;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .confirm-screen-row {
+    span.confirm-screen-section-column {
+      flex: 0.4;
+    }
+
+    div.confirm-screen-section-column {
+      flex: 0.6;
+    }
+
+    .currency-display__input {
+      font-size: 14px;
+    }
   }
 }
 
@@ -250,6 +264,7 @@ section .confirm-screen-account-number,
 
 .confirm-screen-total-box {
   background-color: $wild-sand;
+  position: relative;
 
   .confirm-screen-label {
     line-height: 21px;
@@ -271,6 +286,41 @@ section .confirm-screen-account-number,
   }
 }
 
+.confirm-screen-error {
+  font-size: 12px;
+  line-height: 12px;
+  color: #f00;
+  position: absolute;
+  right: 12px;
+  width: 80px;
+  text-align: right;
+}
+
+.confirm-screen-row.confirm-screen-total-box {
+  .confirm-screen-section-column--with-error {
+    flex: 0.6;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .confirm-screen-row.confirm-screen-total-box {
+    .confirm-screen-section-column--with-error {
+      flex: 0.4;
+    }
+  }
+}
+
+.confirm-screen-form {
+  position: relative;
+
+  .confirm-screen-error {
+    right: 0;
+    width: 100%;
+    margin-top: 7px;
+    text-align: center;
+  }
+}
+
 .confirm-screen-confirm-button {
   height: 50px;
   border-radius: 4px;
@@ -284,7 +334,6 @@ section .confirm-screen-account-number,
   border-width: 0;
   box-shadow: none;
   flex: 1 0 auto;
-  font-weight: 300;
   margin: 0 5px;
 }
 
@@ -301,6 +350,5 @@ section .confirm-screen-account-number,
   box-shadow: none;
   cursor: pointer;
   flex: 1 0 auto;
-  font-weight: 300;
   margin: 0 5px;
 }

@@ -1,6 +1,67 @@
 {
-  "accept": {
-    "message": "Accept"
+  "showIncomingTransactions": {
+    "message": "Show Incoming Transactions"
+  },
+  "showIncomingTransactionsDescription": {
+    "message": "Select this to use Etherscan to show incoming transactions in the transactions list"
+  },
+  "chartOnlyAvailableEth": {
+    "message": "Chart only available on Ethereum networks."
+  },
+  "confirmClear": {
+    "message": "Are you sure you want to clear approved websites?"
+  },
+  "connections": {
+    "message": "Connections"
+  },
+  "connectionsSettingsDescription": {
+    "message": "Sites allowed to read your accounts"
+  },
+  "addSite": {
+    "message": "Add Site"
+  },
+  "addSiteDescription": {
+    "message": "Manually add a site to allow it access to your accounts, useful for older dapps"
+  },
+  "connected": {
+    "message": "Connected"
+  },
+  "connectedDescription": {
+    "message": "The list of sites allowed access to your addresses"
+  },
+  "privacyModeDefault": {
+    "message": "Privacy Mode is now enabled by default"
+  },
+  "contractInteraction": {
+    "message": "Contract Interaction"
+  },
+  "clearApprovalData": {
+    "message": "Remove all sites"
+  },
+  "reject": {
+    "message": "Reject"
+  },
+  "providerRequest": {
+    "message": "$1 would like to connect to your account"
+  },
+  "providerRequestInfo": {
+    "message": "This site is requesting access to view your current account address. Always make sure you trust the sites you interact with."
+  },
+  "about": {
+    "message": "About"
+  },
+  "aboutSettingsDescription": {
+    "message": "Version, support center, and contact info."
+  },
+  "acceleratingATransaction": {
+    "message": "* Accelerating a transaction by using a higher gas price increases its chances of getting processed by the network faster, but it is not always guaranteed."
+  },
+  "accessAndSpendNotice": {
+    "message": "$1 may access and spend up to this max amount",
+    "description": "$1 is the url of the site requesting ability to spend"
+  },
+  "accessingYourCamera": {
+    "message": "Accessing your camera..."
   },
   "account": {
     "message": "Account"
@@ -11,11 +72,38 @@
   "accountName": {
     "message": "Account Name"
   },
-  "address": {
-    "message": "Address"
+  "accountOptions": {
+    "message": "Account Options"
   },
-  "addCustomToken": {
-    "message": "Add custom token"
+  "accountSelectionRequired": {
+    "message": "You need to select an account!"
+  },
+  "activityLog": {
+    "message": "activity log"
+  },
+  "addNetwork": {
+    "message": "Add Network"
+  },
+  "addRecipient": {
+    "message": "Add Recipient"
+  },
+  "advanced": {
+    "message": "Advanced"
+  },
+  "advancedSettingsDescription": {
+    "message": "Access developer features, download State Logs, Reset Account, setup testnets and custom RPC."
+  },
+  "advancedOptions": {
+    "message": "Advanced Options"
+  },
+  "addToAddressBook": {
+    "message": "Add to address book"
+  },
+  "addToAddressBookModalPlaceholder": {
+    "message": "e.g. John D."
+  },
+  "addAlias": {
+    "message": "Add alias"
   },
   "addToken": {
     "message": "Add Token"
@@ -23,92 +111,230 @@
   "addTokens": {
     "message": "Add Tokens"
   },
+  "addSuggestedTokens": {
+    "message": "Add Suggested Tokens"
+  },
+  "addAcquiredTokens": {
+    "message": "Add the tokens you've acquired using MetaMask"
+  },
+  "allowOriginSpendToken": {
+    "message": "Allow $1 to spend your $2?",
+    "description": "$1 is the url of the site and $2 is the symbol of the token they are requesting to spend"
+  },
+  "allowWithdrawAndSpend": {
+    "message": "Allow $1 to withdraw and spend up to the following amount:",
+    "description": "The url of the site that requested permission to 'withdraw and spend'"
+  },
   "amount": {
     "message": "Amount"
   },
-  "amountPlusGas": {
-    "message": "Amount + Gas"
+  "amountWithColon": {
+    "message": "Amount:"
   },
   "appDescription": {
-    "message": "Ethereum Browser Extension",
+    "message": "An Ethereum Wallet in your Browser",
     "description": "The description of the application"
   },
   "appName": {
     "message": "MetaMask",
     "description": "The name of the application"
   },
+  "approve": {
+    "message": "Approve"
+  },
+  "approved": {
+    "message": "Approved"
+  },
+  "asset": {
+    "message": "Asset"
+  },
   "attemptingConnect": {
     "message": "Attempting to connect to blockchain."
+  },
+  "attemptToCancel": {
+    "message": "Attempt to Cancel?"
+  },
+  "attemptToCancelDescription": {
+    "message": "Submitting this attempt does not guarantee your original transaction will be cancelled. If the cancellation attempt is successful, you will be charged the transaction fee above."
   },
   "attributions": {
     "message": "Attributions"
   },
-  "available": {
-    "message": "Available"
+  "autoLogoutTimeLimit": {
+    "message": "Auto-Logout Timer (minutes)"
+  },
+  "autoLogoutTimeLimitDescription": {
+    "message": "Set the idle time in minutes before MetaMask will automatically log out"
+  },
+  "average": {
+    "message": "Average"
   },
   "back": {
     "message": "Back"
   },
-  "balance": {
-    "message": "Balance:"
+  "backToAll": {
+    "message": "Back to All"
   },
-  "balances": {
-    "message": "Your balances"
+  "backupApprovalNotice": {
+    "message": "Backup your Secret Recovery code to keep your wallet and funds secure."
+  },
+  "backupApprovalInfo": {
+    "message": "This secret code is required to recover your wallet in case you lose your device, forget your password, have to re-install MetaMask, or want to access your wallet on another device."
+  },
+  "backupNow": {
+    "message": "Backup now"
+  },
+  "balance": {
+    "message": "Balance"
+  },
+  "balanceOutdated": {
+    "message": "Balance may be outdated"
   },
   "balanceIsInsufficientGas": {
     "message": "Insufficient balance for current gas total"
   },
-  "beta": {
-    "message": "BETA"
+  "basic": {
+    "message": "Basic"
   },
   "betweenMinAndMax": {
     "message": "must be greater than or equal to $1 and less than or equal to $2.",
     "description": "helper for inputting hex as decimal input"
   },
+  "blockExplorerUrl": {
+    "message": "Block Explorer"
+  },
+  "blockExplorerView": {
+    "message": "View account at $1",
+    "description": "$1 replaced by URL for custom block explorer"
+  },
   "blockiesIdenticon": {
     "message": "Use Blockies Identicon"
   },
-  "borrowDharma": {
-    "message": "Borrow With Dharma (Beta)"
+  "nonceField": {
+    "message": "Customize transaction nonce"
+  },
+  "nonceFieldHeading": {
+    "message": "Custom Nonce"
+  },
+  "nonceFieldDescription": {
+    "message": "Turn this on to change the nonce (transaction number) on confirmation screens. This is an advanced feature, use cautiously."
+  },
+  "browserNotSupported": {
+    "message": "Your Browser is not supported..."
   },
   "builtInCalifornia": {
     "message": "MetaMask is designed and built in California."
   },
-  "buy": {
-    "message": "Buy"
+  "buyWithWyre": {
+    "message": "Buy ETH with Wyre"
   },
-  "buyCoinbase": {
-    "message": "Buy on Coinbase"
+  "buyWithWyreDescription": {
+    "message": "Wyre lets you use a credit card to deposit ETH right in to your MetaMask account."
   },
-  "buyCoinbaseExplainer": {
-    "message": "Coinbase is the world’s most popular way to buy and sell bitcoin, ethereum, and litecoin."
+  "buyCoinSwitch": {
+    "message": "Buy on CoinSwitch"
+  },
+  "buyCoinSwitchExplainer": {
+    "message": "CoinSwitch is the one-stop destination to exchange more than 300 cryptocurrencies at the best rate."
+  },
+  "bytes": {
+    "message": "Bytes"
+  },
+  "off": {
+    "message": "Off"
+  },
+  "ok": {
+    "message": "Ok"
+  },
+  "on": {
+    "message": "On"
+  },
+  "optionalBlockExplorerUrl": {
+    "message": "Block Explorer URL (optional)"
   },
   "cancel": {
     "message": "Cancel"
   },
-  "classicInterface": {
-    "message": "Use classic interface"
+  "cancelAttempt": {
+    "message": "Cancel Attempt"
   },
-  "clickCopy": {
-    "message": "Click to Copy"
+  "cancellationGasFee": {
+    "message": "Cancellation Gas Fee"
+  },
+  "cancelled": {
+    "message": "Cancelled"
+  },
+  "chainId": {
+    "message": "Chain ID"
+  },
+  "clickToAdd": {
+    "message": "Click on $1 to add them to your account"
+  },
+  "clickToRevealSeed": {
+    "message": "Click here to reveal secret words"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "chromeRequiredForHardwareWallets": {
+    "message": "You need to use MetaMask on Google Chrome in order to connect to your Hardware Wallet."
   },
   "confirm": {
     "message": "Confirm"
   },
-  "confirmContract": {
-    "message": "Confirm Contract"
+  "confirmed": {
+    "message": "Confirmed"
   },
   "confirmPassword": {
     "message": "Confirm Password"
   },
-  "confirmTransaction": {
-    "message": "Confirm Transaction"
+  "confirmSecretBackupPhrase": {
+    "message": "Confirm your Secret Backup Phrase"
   },
-  "continue": {
-    "message": "Continue"
+  "congratulations": {
+    "message": "Congratulations"
   },
-  "continueToCoinbase": {
-    "message": "Continue to Coinbase"
+  "connectHardwareWallet": {
+    "message": "Connect Hardware Wallet"
+  },
+  "connect": {
+    "message": "Connect"
+  },
+  "connectRequest": {
+    "message": "Connect Request"
+  },
+  "connectingTo": {
+    "message": "Connecting to $1"
+  },
+  "connectingToKovan": {
+    "message": "Connecting to Kovan Test Network"
+  },
+  "connectingToMainnet": {
+    "message": "Connecting to Main Ethereum Network"
+  },
+  "connectingToRopsten": {
+    "message": "Connecting to Ropsten Test Network"
+  },
+  "connectingToRinkeby": {
+    "message": "Connecting to Rinkeby Test Network"
+  },
+  "connectingToLocalhost": {
+    "message": "Connecting to Localhost 8545"
+  },
+  "connectingToGoerli": {
+    "message": "Connecting to Goerli Test Network"
+  },
+  "contacts": {
+    "message": "Contacts"
+  },
+  "contactsSettingsDescription": {
+    "message": "Add, edit, remove, and manage your contacts"
+  },
+  "continueToWyre": {
+    "message": "Continue to Wyre"
+  },
+  "continueToCoinSwitch": {
+    "message": "Continue to CoinSwitch"
   },
   "contractDeployment": {
     "message": "Contract Deployment"
@@ -119,17 +345,20 @@
   "copiedButton": {
     "message": "Copied"
   },
-  "copiedClipboard": {
-    "message": "Copied to Clipboard"
-  },
   "copiedExclamation": {
     "message": "Copied!"
   },
-  "copiedSafe": {
-    "message": "I've copied it somewhere safe"
-  },
   "copy": {
     "message": "Copy"
+  },
+  "copyAddress": {
+    "message": "Copy address to clipboard"
+  },
+  "copyTransactionId": {
+    "message": "Copy Transaction ID"
+  },
+  "copiedTransactionId": {
+    "message": "Copied Transaction ID"
   },
   "copyToClipboard": {
     "message": "Copy to clipboard"
@@ -146,73 +375,59 @@
   "createAccount": {
     "message": "Create Account"
   },
-  "createDen": {
-    "message": "Create"
+  "createAWallet": {
+    "message": "Create a Wallet"
   },
-  "crypto": {
-    "message": "Crypto",
-    "description": "Exchange type (cryptocurrencies)"
+  "createPassword": {
+    "message": "Create Password"
   },
-  "currentConversion": {
-    "message": "Current Conversion"
+  "currencyConversion": {
+    "message": "Currency Conversion"
   },
-  "currentNetwork": {
-    "message": "Current Network"
+  "currentLanguage": {
+    "message": "Current Language"
   },
   "customGas": {
     "message": "Customize Gas"
   },
-  "customize": {
-    "message": "Customize"
+  "customGasSubTitle": {
+    "message": "Increasing fee may decrease processing times, but it is not guaranteed."
+  },
+  "customToken": {
+    "message": "Custom Token"
   },
   "customRPC": {
     "message": "Custom RPC"
+  },
+  "customSpendLimit": {
+    "message": "Custom Spend Limit"
+  },
+  "dataBackupFoundInfo": {
+    "message": "Some of your account data was backed up during a previous installation of MetaMask. This could include your settings, contacts and tokens. Would you like to restore this data now?"
   },
   "decimalsMustZerotoTen": {
     "message": "Decimals must be at least 0, and not over 36."
   },
   "decimal": {
     "message": "Decimals of Precision"
-  }, 
+  },
   "defaultNetwork": {
     "message": "The default network for Ether transactions is Main Net."
   },
-  "denExplainer": {
-    "message": "Your DEN is your password-encrypted storage within MetaMask."
+  "delete": {
+    "message": "Delete"
+  },
+  "deleteAccount": {
+    "message": "Delete Account"
   },
   "deposit": {
     "message": "Deposit"
   },
-  "depositBTC": {
-    "message": "Deposit your BTC to the address below:"
-  },
-  "depositCoin": {
-    "message": "Deposit your $1 to the address below",
-    "description": "Tells the user what coin they have selected to deposit with shapeshift"
-  },
-  "depositEth": {
-    "message": "Deposit Eth"
-  },
   "depositEther": {
     "message": "Deposit Ether"
   },
-  "depositFiat": {
-    "message": "Deposit with Fiat"
-  },
-  "depositFromAccount": {
-    "message": "Deposit from another account"
-  },
-  "depositShapeShift": {
-    "message": "Deposit with ShapeShift"
-  },
-  "depositShapeShiftExplainer": {
-    "message": "If you own other cryptocurrencies, you can trade and deposit Ether directly into your MetaMask wallet. No Account Needed."
-  },
   "details": {
     "message": "Details"
-  },
-  "directDeposit": {
-    "message": "Direct Deposit"
   },
   "directDepositEther": {
     "message": "Directly Deposit Ether"
@@ -220,71 +435,136 @@
   "directDepositEtherExplainer": {
     "message": "If you already have some Ether, the quickest way to get Ether in your new wallet by direct deposit."
   },
+  "dismiss": {
+    "message": "Dismiss"
+  },
   "done": {
     "message": "Done"
   },
-  "downloadStatelogs": {
+  "downloadGoogleChrome": {
+    "message": "Download Google Chrome"
+  },
+  "downloadSecretBackup": {
+    "message": "Download this Secret Backup Phrase and keep it stored safely on an external encrypted hard drive or storage medium."
+  },
+  "downloadStateLogs": {
     "message": "Download State Logs"
+  },
+  "dontHaveAHardwareWallet": {
+    "message": "Don’t have a hardware wallet?"
+  },
+  "dropped": {
+    "message": "Dropped"
   },
   "edit": {
     "message": "Edit"
   },
-  "editAccountName": {
-    "message": "Edit Account Name"
+  "editContact": {
+    "message": "Edit Contact"
+  },
+  "editPermission": {
+    "message": "Edit Permission"
   },
   "emailUs": {
     "message": "Email us!"
   },
-  "encryptNewDen": {
-    "message": "Encrypt your new DEN"
+  "endOfFlowMessage1": {
+    "message": "You passed the test - keep your seedphrase safe, it's your responsibility!"
+  },
+  "endOfFlowMessage2": {
+    "message": "Tips on storing it safely"
+  },
+  "endOfFlowMessage3": {
+    "message": "Save a backup in multiple places."
+  },
+  "endOfFlowMessage4": {
+    "message": "Never share the phrase with anyone."
+  },
+  "endOfFlowMessage5": {
+    "message": "Be careful of phishing! MetaMask will never spontaneously ask for your seed phrase."
+  },
+  "endOfFlowMessage6": {
+    "message": "If you need to back up your seed phrase again, you can find it in Settings -> Security."
+  },
+  "endOfFlowMessage7": {
+    "message": "If you ever have questions or see something fishy, email support@metamask.io."
+  },
+  "endOfFlowMessage8": {
+    "message": "MetaMask cannot recover your seedphrase."
+  },
+  "endOfFlowMessage9": {
+    "message": "Learn more."
+  },
+  "endOfFlowMessage10": {
+    "message": "All Done"
+  },
+  "ensRegistrationError": {
+    "message": "Error in ENS name registration"
+  },
+  "ensNotFoundOnCurrentNetwork": {
+    "message": "ENS name not found on the current network. Try switching to Main Ethereum Network."
+  },
+  "enterAnAlias": {
+    "message": "Enter an alias"
+  },
+  "enterMaxSpendLimit": {
+    "message": "Enter Max Spend Limit"
   },
   "enterPassword": {
     "message": "Enter password"
   },
-  "enterPasswordConfirm": {
-    "message": "Enter your password to confirm"
+  "enterPasswordContinue": {
+    "message": "Enter password to continue"
+  },
+  "ethereumPublicAddress": {
+    "message": "Ethereum Public Address"
   },
   "etherscanView": {
     "message": "View account on Etherscan"
   },
-  "exchangeRate": {
-    "message": "Exchange Rate"
+  "estimatedProcessingTimes": {
+    "message": "Estimated Processing Times"
+  },
+  "expandView": {
+    "message": "Expand View"
   },
   "exportPrivateKey": {
     "message": "Export Private Key"
   },
-  "exportPrivateKeyWarning": {
-    "message": "Export private keys at your own risk."
-  },
   "failed": {
     "message": "Failed"
   },
+  "fast": {
+    "message": "Fast"
+  },
+  "faster": {
+    "message": "Faster"
+  },
+  "feeAssociatedRequest": {
+    "message": "A fee is associated with this request."
+  },
   "fiat": {
-    "message": "FIAT",
+    "message": "Fiat",
     "description": "Exchange type"
   },
   "fileImportFail": {
     "message": "File import not working? Click here!",
     "description": "Helps user import their account from a JSON file"
   },
-  "followTwitter": {
-    "message": "Follow us on Twitter"
+  "forgetDevice": {
+    "message": "Forget this device"
   },
   "from": {
     "message": "From"
   },
-  "fromToSame": {
-    "message": "From and To address cannot be the same"
-  },
   "fromShapeShift": {
     "message": "From ShapeShift"
   },
-  "gas": {
-    "message": "Gas",
-    "description": "Short indication of gas cost"
+  "functionApprove": {
+    "message": "Function: Approve"
   },
-  "gasFee": {
-    "message": "Gas Fee"
+  "functionType": {
+    "message": "Function Type"
   },
   "gasLimit": {
     "message": "Gas Limit"
@@ -292,23 +572,35 @@
   "gasLimitCalculation": {
     "message": "We calculate the suggested gas limit based on network success rates."
   },
-  "gasLimitRequired": {
-    "message": "Gas Limit Required"
+  "gasLimitInfoModalContent": {
+    "message": "Gas limit is the maximum amount of units of gas you are willing to spend."
   },
   "gasLimitTooLow": {
     "message": "Gas limit must be at least 21000"
   },
-  "generatingSeed": {
-    "message": "Generating Seed..."
+  "gasUsed": {
+    "message": "Gas Used"
   },
   "gasPrice": {
     "message": "Gas Price (GWEI)"
   },
+  "gasPriceExtremelyLow": {
+    "message": "Gas Price Extremely Low"
+  },
+  "gasPriceInfoModalContent": {
+    "message": "Gas price specifies the amount of Ether you are willing to pay for each unit of gas."
+  },
+  "gasPriceNoDenom": {
+    "message": "Gas Price"
+  },
   "gasPriceCalculation": {
     "message": "We calculate the suggested gas prices based on network success rates."
   },
-  "gasPriceRequired": {
-    "message": "Gas Price Required"
+  "general": {
+    "message": "General"
+  },
+  "generalSettingsDescription": {
+    "message": "Currency conversion, primary currency, language, blockies identicon"
   },
   "getEther": {
     "message": "Get Ether"
@@ -317,16 +609,40 @@
     "message": "Get Ether from a faucet for the $1",
     "description": "Displays network name for Ether faucet"
   },
+  "getHelp": {
+    "message": "Get Help."
+  },
+  "getStarted": {
+    "message": "Get Started"
+  },
   "greaterThanMin": {
     "message": "must be greater than or equal to $1.",
     "description": "helper for inputting hex as decimal input"
+  },
+  "happyToSeeYou": {
+    "message": "We’re happy to see you."
+  },
+  "hardware": {
+    "message": "hardware"
+  },
+  "hardwareWalletConnected": {
+    "message": "Hardware wallet connected"
+  },
+  "hardwareWallets": {
+    "message": "Connect a hardware wallet"
+  },
+  "hardwareWalletsMsg": {
+    "message": "Select a hardware wallet you'd like to use with MetaMask"
+  },
+  "havingTroubleConnecting": {
+    "message": "Having trouble connecting?"
   },
   "here": {
     "message": "here",
     "description": "as in -click here- for more information (goes with troubleTokenBalances)"
   },
-  "hereList": {
-    "message": "Here's a list!!!!"
+  "hexData": {
+    "message": "Hex Data"
   },
   "hide": {
     "message": "Hide"
@@ -337,11 +653,8 @@
   "hideTokenPrompt": {
     "message": "Hide Token?"
   },
-  "howToDeposit": {
-    "message": "How would you like to deposit Ether?"
-  },
-  "holdEther": {
-    "message": "It allows you to hold ether & tokens, and serves as your bridge to decentralized applications."
+  "history": {
+    "message": "History"
   },
   "import": {
     "message": "Import",
@@ -351,20 +664,32 @@
     "message": "Import Account"
   },
   "importAccountMsg": {
-    "message":" Imported accounts will not be associated with your originally created MetaMask account seedphrase. Learn more about imported accounts "
+    "message": " Imported accounts will not be associated with your originally created MetaMask account seedphrase. Learn more about imported accounts "
   },
-  "importAnAccount": {
-    "message": "Import an account"
+  "importAccountSeedPhrase": {
+    "message": "Import an Account with Seed Phrase"
   },
-  "importDen": {
-    "message": "Import Existing DEN"
+  "importWallet": {
+    "message": "Import Wallet"
+  },
+  "importYourExisting": {
+    "message": "Import your existing wallet using a 12 word seed phrase"
   },
   "imported": {
     "message": "Imported",
     "description": "status showing that an account has been fully loaded into the keyring"
   },
+  "importUsingSeed": {
+    "message": "Import using account seed phrase"
+  },
   "infoHelp": {
     "message": "Info & Help"
+  },
+  "initialTransactionConfirmed": {
+    "message": "Your initial transaction was confirmed by the network. Click OK to go back."
+  },
+  "insufficientBalance": {
+    "message": "Insufficient balance."
   },
   "insufficientFunds": {
     "message": "Insufficient funds."
@@ -378,20 +703,23 @@
   "invalidAddressRecipient": {
     "message": "Recipient address is invalid"
   },
-  "invalidGasParams": {
-    "message": "Invalid Gas Parameters"
+  "knownAddressRecipient": {
+    "message": "Known contract address."
+  },
+  "invalidAddressRecipientNotEthNetwork": {
+    "message": "Not ETH network, set to lowercase"
   },
   "invalidInput": {
     "message": "Invalid input."
   },
-  "invalidRequest": {
-    "message": "Invalid Request"
-  },
   "invalidRPC": {
-    "message": "Invalid RPC URI"
+    "message": "Invalid RPC URL"
   },
-  "jsonFail": {
-    "message": "Something went wrong. Please make sure your JSON file is properly formatted."
+  "invalidBlockExplorerURL": {
+    "message": "Invalid Block Explorer URL"
+  },
+  "invalidSeedPhrase": {
+    "message": "Invalid seed phrase"
   },
   "jsonFile": {
     "message": "JSON File",
@@ -400,24 +728,39 @@
   "kovan": {
     "message": "Kovan Test Network"
   },
-  "knowledgeDataBase": {
-    "message": "Visit our Knowledge Base"
+  "max": {
+    "message": "Max"
+  },
+  "learnMore": {
+    "message": "Learn more"
+  },
+  "ledgerAccountRestriction": {
+    "message": "You need to make use your last account before you can add a new one."
   },
   "lessThanMax": {
     "message": "must be less than or equal to $1.",
     "description": "helper for inputting hex as decimal input"
   },
+  "letsGoSetUp": {
+    "message": "Yes, let’s get set up!"
+  },
   "likeToAddTokens": {
     "message": "Would you like to add these tokens?"
   },
-  "limit": {
-    "message": "Limit"
+  "links": {
+    "message": "Links"
+  },
+  "liveGasPricePredictions": {
+    "message": "Live Gas Price Predictions"
   },
   "loading": {
     "message": "Loading..."
   },
   "loadingTokens": {
     "message": "Loading Tokens..."
+  },
+  "loadMore": {
+    "message": "Load More"
   },
   "localhost": {
     "message": "Localhost 8545"
@@ -428,26 +771,47 @@
   "logout": {
     "message": "Log out"
   },
-  "loose": {
-    "message": "Loose"
-  },
-  "loweCaseWords": {
-    "message": "seed words only have lowercase characters"
+  "logoutTimeTooGreat": {
+    "message": "Logout time is too great"
   },
   "mainnet": {
     "message": "Main Ethereum Network"
+  },
+  "memorizePhrase": {
+    "message": "Memorize this phrase."
+  },
+  "memo": {
+    "message": "memo"
+  },
+  "menu": {
+    "message": "Menu"
   },
   "message": {
     "message": "Message"
   },
   "metamaskDescription": {
-    "message": "MetaMask is a secure identity vault for Ethereum."
+    "message": "Connecting you to Ethereum and the Decentralized Web."
   },
-  "min": {
-    "message": "Minimum"
+  "metamaskSeedWords": {
+    "message": "MetaMask Seed Words"
+  },
+  "metamaskVersion": {
+    "message": "MetaMask Version"
+  },
+  "missingYourTokens": {
+    "message": "Don't see your tokens?"
+  },
+  "mobileSyncText": {
+    "message": "Please enter your password to confirm it's you!"
   },
   "myAccounts": {
     "message": "My Accounts"
+  },
+  "myWalletAccounts": {
+    "message": "My Wallet Accounts"
+  },
+  "myWalletAccountsDescription": {
+    "message": "All of your MetaMask created accounts will automatically be added to this section."
   },
   "mustSelectOne": {
     "message": "Must select at least 1 token."
@@ -459,22 +823,33 @@
     "message": "You must select a file to import.",
     "description": "User is important an account and needs to add a file to continue"
   },
-  "needImportPassword": {
-    "message": "You must enter a password for the selected file.",
-    "description": "Password and file needed to import an account"
-  },
   "negativeETH": {
     "message": "Can not send negative amounts of ETH."
+  },
+  "networkName": {
+    "message": "Network Name"
   },
   "networks": {
     "message": "Networks"
   },
+  "networkSettingsDescription": {
+    "message": "Add and edit custom RPC networks"
+  },
+  "nevermind": {
+    "message": "Nevermind"
+  },
   "newAccount": {
     "message": "New Account"
+  },
+  "newAccountDetectedDialogMessage": {
+    "message": "New address detected! Click here to add to your address book."
   },
   "newAccountNumberName": {
     "message": "Account $1",
     "description": "Default name of next account to be created on create account screen"
+  },
+  "newContact": {
+    "message": "New Contact"
   },
   "newContract": {
     "message": "New Contract"
@@ -482,14 +857,45 @@
   "newPassword": {
     "message": "New Password (min 8 chars)"
   },
-  "newRecipient": {
-    "message": "New Recipient"
+  "newNetwork": {
+    "message": "New Network"
   },
-  "newRPC": {
+  "newToMetaMask": {
+    "message": "New to MetaMask?"
+  },
+  "noAlreadyHaveSeed": {
+    "message": "No, I already have a seed phrase"
+  },
+  "protectYourKeys": {
+    "message": "Protect Your Keys!"
+  },
+  "protectYourKeysMessage1": {
+    "message": "Be careful with your seed phrase — there have been reports of websites that attempt to imitate MetaMask. MetaMask will never ask for your seed phrase!"
+  },
+  "protectYourKeysMessage2": {
+    "message": "Keep your phrase safe. If you see something fishy, or you’re uncertain about a website, email support@metamask.io"
+  },
+  "rpcUrl": {
     "message": "New RPC URL"
+  },
+  "optionalChainId": {
+    "message": "ChainID (optional)"
+  },
+  "optionalSymbol": {
+    "message": "Symbol (optional)"
+  },
+  "newTotal": {
+    "message": "New Total"
+  },
+  "newTransactionFee": {
+    "message": "New Transaction Fee"
   },
   "next": {
     "message": "Next"
+  },
+  "nextNonceWarning": {
+    "message": "Nonce is higher than suggested nonce of $1",
+    "description": "The next nonce according to MetaMask's internal logic"
   },
   "noAddressForName": {
     "message": "No address has been set for this name."
@@ -497,35 +903,50 @@
   "noDeposits": {
     "message": "No deposits received"
   },
-  "noTransactionHistory": {
-    "message": "No transaction history."
+  "noConversionRateAvailable": {
+    "message": "No Conversion Rate Available"
   },
   "noTransactions": {
-    "message": "No Transactions"
+    "message": "You have no transactions"
   },
-  "notStarted": {
-    "message": "Not Started"
+  "noThanks": {
+    "message": "No Thanks"
   },
-  "oldUI": {
-    "message": "Old UI"
+  "notEnoughGas": {
+    "message": "Not Enough Gas"
   },
-  "oldUIMessage": {
-    "message": "You have returned to the old UI. You can switch back to the New UI through the option in the top right dropdown menu."
+  "noWebcamFoundTitle": {
+    "message": "Webcam not found"
   },
-  "or": {
-    "message": "or",
-    "description": "choice between creating or importing a new account"
+  "noWebcamFound": {
+    "message": "Your computer's webcam was not found. Please try again."
   },
-  "passwordCorrect": {
-    "message": "Please make sure your password is correct."
+  "ofTextNofM": {
+    "message": "of"
   },
-  "passwordMismatch": {
-    "message": "passwords don't match",
-    "description": "in password creation process, the two new password fields did not match"
+  "orderOneHere": {
+    "message": "Order a Trezor or Ledger and keep your funds in cold storage"
   },
-  "passwordShort": {
-    "message": "password not long enough",
-    "description": "in password creation process, the password is not long enough to be secure"
+  "origin": {
+    "message": "Origin"
+  },
+  "parameters": {
+    "message": "Parameters"
+  },
+  "participateInMetaMetrics": {
+    "message": "Participate in MetaMetrics"
+  },
+  "participateInMetaMetricsDescription": {
+    "message": "Participate in MetaMetrics to help us make MetaMask better"
+  },
+  "password": {
+    "message": "Password"
+  },
+  "passwordsDontMatch": {
+    "message": "Passwords Don't Match"
+  },
+  "passwordNotLongEnough": {
+    "message": "Password not long enough"
   },
   "pastePrivateKey": {
     "message": "Paste your private key string here:",
@@ -534,11 +955,20 @@
   "pasteSeed": {
     "message": "Paste your seed phrase here!"
   },
+  "pending": {
+    "message": "pending"
+  },
   "personalAddressDetected": {
     "message": "Personal address detected. Input the token contract address."
   },
-  "pleaseReviewTransaction": {
-    "message": "Please review your transaction."
+  "prev": {
+    "message": "Prev"
+  },
+  "primaryCurrencySetting": {
+    "message": "Primary Currency"
+  },
+  "primaryCurrencySettingDescription": {
+    "message": "Select native to prioritize displaying values in the native currency of the chain (e.g. ETH). Select Fiat to prioritize displaying values in your selected fiat currency."
   },
   "privacyMsg": {
     "message": "Privacy Policy"
@@ -548,55 +978,110 @@
     "description": "select this type of file to use to import an account"
   },
   "privateKeyWarning": {
-    "message": "Warning: Never disclose this key. Anyone with your private keys can take steal any assets held in your account."
+    "message": "Warning: Never disclose this key. Anyone with your private keys can steal any assets held in your account."
   },
   "privateNetwork": {
     "message": "Private Network"
   },
+  "proposedApprovalLimit": {
+    "message": "Proposed Approval Limit"
+  },
   "qrCode": {
     "message": "Show QR Code"
   },
+  "queue": {
+    "message": "Queue"
+  },
   "readdToken": {
-    "message": "You can add this token back in the future by going go to “Add token” in your accounts options menu."
+    "message": "You can add this token back in the future by going to “Add token” in your accounts options menu."
   },
-  "readMore": {
-    "message": "Read more here."
-  },
-  "readMore2": {
-    "message": "Read more."
-  },
-  "receive": {
-    "message": "Receive"
+  "recents": {
+    "message": "Recents"
   },
   "recipientAddress": {
     "message": "Recipient Address"
   },
-  "refundAddress": {
-    "message": "Your Refund Address"
+  "recipientAddressPlaceholder": {
+    "message": "Search, public address (0x), or ENS"
+  },
+  "rejectAll": {
+    "message": "Reject All"
+  },
+  "rejectTxsN": {
+    "message": "Reject $1 transactions"
+  },
+  "rejectTxsDescription": {
+    "message": "You are about to batch reject $1 transactions."
   },
   "rejected": {
     "message": "Rejected"
   },
+  "reset": {
+    "message": "Reset"
+  },
   "resetAccount": {
     "message": "Reset Account"
   },
+  "resetAccountDescription": {
+    "message": "Resetting your account will clear your transaction history."
+  },
+  "deleteNetwork": {
+    "message": "Delete Network?"
+  },
+  "deleteNetworkDescription": {
+    "message": "Are you sure you want to delete this network?"
+  },
+  "remindMeLater": {
+    "message": "Remind me later"
+  },
   "restoreFromSeed": {
-    "message": "Restore from seed phrase"
+    "message": "Restore account?"
+  },
+  "restoreAccountWithSeed": {
+    "message": "Restore your Account with Seed Phrase"
+  },
+  "restoreWalletPreferences": {
+    "message": "A backup of your data from $1 has been found. Would you like to restore your wallet preferences?",
+    "description": "$1 is the date at which the data was backed up"
+  },
+  "requestsAwaitingAcknowledgement": {
+    "message": "requests waiting to be acknowledged"
   },
   "required": {
     "message": "Required"
   },
-  "retryWithMoreGas": {
-    "message": "Retry with a higher gas price here"
+  "restore": {
+    "message": "Restore"
   },
   "revealSeedWords": {
     "message": "Reveal Seed Words"
   },
+  "revealSeedWordsTitle": {
+    "message": "Seed Phrase"
+  },
+  "revealSeedWordsDescription": {
+    "message": "If you ever change browsers or move computers, you will need this seed phrase to access your accounts. Save them somewhere safe and secret."
+  },
+  "revealSeedWordsWarningTitle": {
+    "message": "DO NOT share this phrase with anyone!"
+  },
   "revealSeedWordsWarning": {
-    "message": "Do not recover your seed words in a public place! These words can be used to steal all your accounts."
+    "message": "These words can be used to steal all your accounts."
   },
   "revert": {
     "message": "Revert"
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "removeAccount": {
+    "message": "Remove account"
+  },
+  "removeAccountDescription": {
+    "message": "This account will be removed from your wallet. Please make sure you have the original seed phrase or private key for this imported account before continuing. You can import or create accounts again from the account drop-down. "
+  },
+  "readyToConnect": {
+    "message": "Ready to Connect?"
   },
   "rinkeby": {
     "message": "Rinkeby Test Network"
@@ -604,37 +1089,65 @@
   "ropsten": {
     "message": "Ropsten Test Network"
   },
-  "sampleAccountName": {
-    "message": "E.g. My new account",
-    "description": "Help user understand concept of adding a human-readable name to their account"
+  "goerli": {
+    "message": "Goerli Test Network"
   },
   "save": {
     "message": "Save"
   },
-  "saveAsFile": {
-    "message": "Save as File",
-    "description": "Account export process"
+  "slow": {
+    "message": "Slow"
   },
-  "saveSeedAsFile": {
-    "message": "Save Seed Words As File"
+  "slower": {
+    "message": "Slower"
+  },
+  "saveAsCsvFile": {
+    "message": "Save as CSV File"
+  },
+  "scanInstructions": {
+    "message": "Place the QR code in front of your camera"
+  },
+  "scanQrCode": {
+    "message": "Scan QR Code"
   },
   "search": {
     "message": "Search"
   },
+  "searchResults": {
+    "message": "Search Results"
+  },
+  "secretBackupPhrase": {
+    "message": "Secret Backup Phrase"
+  },
+  "secretBackupPhraseDescription": {
+    "message": "Your secret backup phrase makes it easy to back up and restore your account."
+  },
+  "secretBackupPhraseWarning": {
+    "message": "WARNING: Never disclose your backup phrase. Anyone with this phrase can take your Ether forever."
+  },
   "secretPhrase": {
     "message": "Enter your secret twelve word phrase here to restore your vault."
   },
-  "seedPhraseReq": {
-    "message": "seed phrases are 12 words long"
+  "securityAndPrivacy": {
+    "message": "Security & Privacy"
   },
-  "select": {
-    "message": "Select"
+  "securitySettingsDescription": {
+    "message": "Privacy settings and wallet seed phrase"
+  },
+  "seedPhrasePlaceholder": {
+    "message": "Separate each word with a single space"
+  },
+  "seedPhraseReq": {
+    "message": "Seed phrases are 12 words long"
   },
   "selectCurrency": {
     "message": "Select Currency"
   },
-  "selectService": {
-    "message": "Select Service"
+  "selectEachPhrase": {
+    "message": "Please select each phrase in order to make sure it is correct."
+  },
+  "selectLocale": {
+    "message": "Select Locale"
   },
   "selectType": {
     "message": "Select Type"
@@ -642,32 +1155,77 @@
   "send": {
     "message": "Send"
   },
+  "sendAmount": {
+    "message": "Send Amount"
+  },
   "sendETH": {
     "message": "Send ETH"
   },
   "sendTokens": {
     "message": "Send Tokens"
   },
-  "sendTokensAnywhere": {
-    "message": "Send Tokens to anyone with an Ethereum account"
+  "sentEther": {
+    "message": "sent ether"
+  },
+  "sentTokens": {
+    "message": "sent tokens"
+  },
+  "separateEachWord": {
+    "message": "Separate each word with a single space"
+  },
+  "searchTokens": {
+    "message": "Search Tokens"
+  },
+  "selectAnAccount": {
+    "message": "Select an Account"
+  },
+  "selectAnAccountHelp": {
+    "message": "Select the account to view in MetaMask"
+  },
+  "selectAHigherGasFee": {
+    "message": "Select a higher gas fee to accelerate the processing of your transaction.*"
+  },
+  "selectHdPath": {
+    "message": "Select HD Path"
+  },
+  "selectPathHelp": {
+    "message": "If you don't see your existing Ledger accounts below, try switching paths to \"Legacy (MEW / MyCrypto)\""
   },
   "settings": {
     "message": "Settings"
   },
-  "shapeshiftBuy": {
-    "message": "Buy with Shapeshift"
+  "showAdvancedGasInline": {
+    "message": "Advanced gas controls"
+  },
+  "showAdvancedGasInlineDescription": {
+    "message": "Select this to show gas price and limit controls directly on the send and confirm screens."
+  },
+  "showFiatConversionInTestnets": {
+    "message": "Show Conversion on Testnets"
+  },
+  "showFiatConversionInTestnetsDescription": {
+    "message": "Select this to show fiat conversion on Testnets"
   },
   "showPrivateKeys": {
     "message": "Show Private Keys"
   },
-  "showQRCode": {
-    "message": "Show QR Code"
+  "showHexData": {
+    "message": "Show Hex Data"
+  },
+  "showHexDataDescription": {
+    "message": "Select this to show the hex data field on the send screen"
   },
   "sign": {
     "message": "Sign"
   },
-  "signMessage": {
-    "message": "Sign Message"
+  "signatureRequest": {
+    "message": "Signature Request"
+  },
+  "signatureRequest1": {
+    "message": "Message"
+  },
+  "signed": {
+    "message": "Signed"
   },
   "signNotice": {
     "message": "Signing this message can have \ndangerous side effects. Only sign messages from \nsites you fully trust with your entire account.\n This dangerous method will be removed in a future version. "
@@ -675,14 +1233,30 @@
   "sigRequest": {
     "message": "Signature Request"
   },
-  "sigRequested": {
-    "message": "Signature Requested"
+  "somethingWentWrong": {
+    "message": "Oops! Something went wrong."
   },
-  "spaceBetween": {
-    "message": "there can only be a space between words"
+  "speedUp": {
+    "message": "Speed Up"
   },
-  "status": {
-    "message": "Status"
+  "speedUpCancellation": {
+    "message": "Speed up this cancellation"
+  },
+  "speedUpTransaction": {
+    "message": "Speed up this transaction"
+  },
+  "spendLimitPermission": {
+    "message": "Spend limit permission"
+  },
+  "spendLimitRequestedBy": {
+    "message": "Spend limit requested by $1",
+    "description": "Origin of the site requesting the spend limit"
+  },
+  "switchNetworks": {
+    "message": "Switch Networks"
+  },
+  "stateLogFileName": {
+    "message": "MetaMask State Logs"
   },
   "stateLogs": {
     "message": "State Logs"
@@ -690,17 +1264,74 @@
   "stateLogsDescription": {
     "message": "State logs contain your public account addresses and sent transactions."
   },
+  "stateLogError": {
+    "message": "Error in retrieving state logs."
+  },
+  "step1HardwareWallet": {
+    "message": "1. Connect Hardware Wallet"
+  },
+  "step1HardwareWalletMsg": {
+    "message": "Connect your hardware wallet directly to your computer."
+  },
+  "step2HardwareWallet": {
+    "message": "2. Select an Account"
+  },
+  "step2HardwareWalletMsg": {
+    "message": "Select the account you want to view. You can only choose one at a time."
+  },
+  "step3HardwareWallet": {
+    "message": "3. Start using dApps and more!"
+  },
+  "step3HardwareWalletMsg": {
+    "message": "Use your hardware account like you would with any Ethereum account. Log in to dApps, send Eth, buy and store ERC20 tokens and Non-Fungible tokens like CryptoKitties."
+  },
+  "storePhrase": {
+    "message": "Store this phrase in a password manager like 1Password."
+  },
   "submit": {
     "message": "Submit"
+  },
+  "submitted": {
+    "message": "Submitted"
   },
   "supportCenter": {
     "message": "Visit our Support Center"
   },
-  "symbolBetweenZeroTen": {
-    "message": "Symbol must be between 0 and 10 characters."
+  "symbol": {
+    "message": "Symbol"
   },
-  "takesTooLong": {
-    "message": "Taking too long?"
+  "symbolBetweenZeroTwelve": {
+    "message": "Symbol must be between 0 and 12 characters."
+  },
+  "syncWithThreeBox": {
+    "message": "Sync data with 3Box (experimental)"
+  },
+  "syncWithThreeBoxDescription": {
+    "message": "Turn on to have your settings backed up with 3Box. This feature is currenty experimental; use at your own risk."
+  },
+  "syncWithThreeBoxDisabled": {
+    "message": "3Box has been disabled due to an error during the initial sync"
+  },
+  "syncWithMobile": {
+    "message": "Sync with mobile"
+  },
+  "syncWithMobileTitle": {
+    "message": "Sync with mobile"
+  },
+  "syncWithMobileDesc": {
+    "message": "You can sync your accounts and information with your mobile device. Open the MetaMask mobile app, go to \"Settings\" and tap on \"Sync from Browser Extension\""
+  },
+  "syncWithMobileDescNewUsers": {
+    "message": "If you just open the MetaMask Mobile app for the first time, just follow the steps in your phone."
+  },
+  "syncWithMobileScanThisCode": {
+    "message": "Scan this code with your MetaMask mobile app"
+  },
+  "syncWithMobileBeCareful": {
+    "message": "Make sure nobody else is looking at your screen when you scan this code"
+  },
+  "syncWithMobileComplete": {
+    "message": "Your data has been synced succesfully. Enjoy the MetaMask mobile app!"
   },
   "terms": {
     "message": "Terms of Use"
@@ -708,64 +1339,107 @@
   "testFaucet": {
     "message": "Test Faucet"
   },
+  "thisWillCreate": {
+    "message": "This will create a new wallet and seed phrase"
+  },
+  "tips": {
+    "message": "Tips"
+  },
   "to": {
     "message": "To"
+  },
+  "toWithColon": {
+    "message": "To:"
   },
   "toETHviaShapeShift": {
     "message": "$1 to ETH via ShapeShift",
     "description": "system will fill in deposit type in start of message"
   },
-  "tokenAddress": {
-    "message": "Token Address"
+  "token": {
+    "message": "Token"
   },
   "tokenAlreadyAdded": {
     "message": "Token has already been added."
   },
-  "tokenBalance": {
-    "message": "Your Token Balance is:"
-  },
-  "tokenSelection": {
-    "message": "Search for tokens or select from our list of popular tokens."
+  "tokenContractAddress": {
+    "message": "Token Contract Address"
   },
   "tokenSymbol": {
     "message": "Token Symbol"
   },
-  "tokenWarning1": {
-    "message": "Keep track of the tokens you’ve bought with your MetaMask account. If you bought tokens using a different account, those tokens will not appear here."
-  },
   "total": {
     "message": "Total"
   },
-  "transactions": {
-    "message": "transactions"
+  "transaction": {
+    "message": "transaction"
   },
-  "transactionMemo": {
-    "message": "Transaction memo (optional)"
+  "transactionConfirmed": {
+    "message": "Transaction confirmed at $2."
   },
-  "transactionNumber": {
-    "message": "Transaction Number"
+  "transactionCreated": {
+    "message": "Transaction created with a value of $1 at $2."
   },
-  "transfers": {
-    "message": "Transfers"
+  "transactionDropped": {
+    "message": "Transaction dropped at $2."
+  },
+  "transactionSubmitted": {
+    "message": "Transaction submitted with gas fee of $1 at $2."
+  },
+  "transactionResubmitted": {
+    "message": "Transaction resubmitted with gas fee increased to $1 at $2"
+  },
+  "transactionUpdated": {
+    "message": "Transaction updated at $2."
+  },
+  "transactionErrored": {
+    "message": "Transaction encountered an error."
+  },
+  "transactionCancelAttempted": {
+    "message": "Transaction cancel attempted with gas fee of $1 at $2"
+  },
+  "transactionCancelSuccess": {
+    "message": "Transaction successfully cancelled at $2"
+  },
+  "transactionError": {
+    "message": "Transaction Error. Exception thrown in contract code."
+  },
+  "transactionErrorNoContract": {
+    "message": "Trying to call a function on a non-contract address."
+  },
+  "transactionFee": {
+    "message": "Transaction Fee"
+  },
+  "transactionTime": {
+    "message": "Transaction Time"
+  },
+  "transfer": {
+    "message": "Transfer"
+  },
+  "transferBetweenAccounts": {
+    "message": "Transfer between my accounts"
+  },
+  "transferFrom": {
+    "message": "Transfer From"
   },
   "troubleTokenBalances": {
     "message": "We had trouble loading your token balances. You can view them ",
     "description": "Followed by a link (here) to view token balances"
   },
-  "twelveWords": {
-    "message": "These 12 words are the only way to restore your MetaMask accounts.\nSave them somewhere safe and secret."
+  "trustSiteApprovePermission": {
+    "message": "Do you trust this site? By granting this permission, you’re allowing $1 to withdraw your $2 and automate transactions for you.",
+    "description": "$1 is the url requesting permission and $2 is the symbol of the currency that the request is for"
+  },
+  "tryAgain": {
+    "message": "Try again"
   },
   "typePassword": {
-    "message": "Type Your Password"
+    "message": "Type your MetaMask password"
   },
-  "uiWelcome": {
-    "message": "Welcome to the New UI (Beta)"
+  "unapproved": {
+    "message": "Unapproved"
   },
-  "uiWelcomeMessage": {
-    "message": "You are now using the new Metamask UI. Take a look around, try out new features like sending tokens, and let us know if you have any issues."
-  },
-  "unavailable": {
-    "message": "Unavailable"
+  "units": {
+    "message": "units"
   },
   "unknown": {
     "message": "Unknown"
@@ -773,47 +1447,88 @@
   "unknownNetwork": {
     "message": "Unknown Private Network"
   },
-  "unknownNetworkId": {
-    "message": "Unknown network ID"
+  "unknownQrCode": {
+    "message": "Error: We couldn't identify that QR code"
+  },
+  "unknownCameraErrorTitle": {
+    "message": "Ooops! Something went wrong...."
+  },
+  "unknownCameraError": {
+    "message": "There was an error while trying to access your camera. Please try again..."
+  },
+  "unlimited": {
+    "message": "Unlimited"
+  },
+  "unlock": {
+    "message": "Unlock"
+  },
+  "unlockMessage": {
+    "message": "The decentralized web awaits"
+  },
+  "updatedWithDate": {
+    "message": "Updated $1"
   },
   "uriErrorMsg": {
     "message": "URIs require the appropriate HTTP/HTTPS prefix."
   },
-  "usaOnly": {
-    "message": "USA only",
-    "description": "Using this exchange is limited to people inside the USA"
-  },
   "usedByClients": {
     "message": "Used by a variety of different clients"
   },
-  "useOldUI": {
-    "message": "Use old UI"
+  "userName": {
+    "message": "Username"
   },
   "validFileImport": {
     "message": "You must select a valid file to import."
   },
-  "vaultCreated": {
-    "message": "Vault Created"
-  },
   "viewAccount": {
     "message": "View Account"
   },
+  "viewinExplorer": {
+    "message": "View in Explorer"
+  },
+  "viewContact": {
+    "message": "View Contact"
+  },
+  "viewOnCustomBlockExplorer": {
+    "message": "View at $1"
+  },
+  "viewOnEtherscan": {
+    "message": "View on Etherscan"
+  },
+  "retryTransaction": {
+    "message": "Retry Transaction"
+  },
   "visitWebSite": {
     "message": "Visit our web site"
-  }, 
-  "warning": {
-    "message": "Warning"
   },
-  "welcomeBeta": {
-    "message": "Welcome to MetaMask Beta"
+  "walletSeed": {
+    "message": "Wallet Seed"
   },
-  "whatsThis": {
-    "message": "What's this?"
+  "welcomeBack": {
+    "message": "Welcome Back!"
+  },
+  "welcome": {
+    "message": "Welcome to MetaMask"
+  },
+  "writePhrase": {
+    "message": "Write this phrase on a piece of paper and store in a secure location. If you want even more security, write it down on multiple pieces of paper and store each in 2 - 3 different locations."
+  },
+  "yesLetsTry": {
+    "message": "Yes, let's try"
+  },
+  "youNeedToAllowCameraAccess": {
+    "message": "You need to allow camera access to use this feature."
   },
   "yourSigRequested": {
     "message": "Your signature is being requested"
   },
   "youSign": {
     "message": "You are signing"
+  },
+  "yourPrivateSeedPhrase": {
+    "message": "Your private seed phrase"
+  },
+  "zeroGasPriceOnSpeedUpError": {
+    "message": "Zero gas price on speed up"
   }
 }

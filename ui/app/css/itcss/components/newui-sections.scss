@@ -6,8 +6,16 @@ $sub-mid-size-breakpoint-range: "screen and (min-width: #{$break-large}) and (ma
  */
 
 // Component Colors
-$tx-view-bg: $white;
 $wallet-view-bg: $alabaster;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  align-items: center;
+}
 
 // Main container
 .main-container {
@@ -23,35 +31,19 @@ $wallet-view-bg: $alabaster;
   display: none;
 }
 
+.main-container-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 auto;
+  min-height: 0;
+  width: 100%;
+}
+
 //Account and transaction details
 .account-and-transaction-details {
   display: flex;
-  flex: 1 0 auto;
-}
-
-// tx view
-
-.tx-view {
-  flex: 63.5 0 66.5%;
-  background: $tx-view-bg;
-
-  // No title on mobile
-  @media screen and (max-width: 575px) {
-    .identicon-wrapper {
-      display: none;
-    }
-
-    .account-name {
-      display: none;
-    }
-  }
-}
-
-.open-in-browser {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 // wallet view and sidebar
@@ -65,6 +57,13 @@ $wallet-view-bg: $alabaster;
   z-index: 200;
   position: relative;
 
+  [dir='rtl'] & i.fa.fa-clipboard {
+    /*rtl:ignore*/
+    margin-left: 0 !important;
+    /*rtl:ignore*/
+    margin-right: 8px !important;
+  }
+
   @media screen and (min-width: 576px) {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -72,85 +71,6 @@ $wallet-view-bg: $alabaster;
 
   @media #{$sub-mid-size-breakpoint-range} {
     min-width: 160px;
-  }
-
-  .wallet-view-account-details {
-    flex: 0 0 auto;
-  }
-
-  &__name-container {
-    flex: 0 0 auto;
-    cursor: pointer;
-    width: 100%;
-  }
-
-  &__keyring-label {
-    height: 50px;
-    color: $dusty-gray;
-    font-family: Roboto;
-    font-size: 10px;
-    text-align: right;
-    padding: 17px 20px 0;
-    box-sizing: border-box;
-  }
-
-  &__details-button {
-    font-size: 10px;
-    border-radius: 17px;
-    background-color: transparent;
-    margin: 0 auto;
-    padding: 4px 12px;
-    flex: 0 0 auto;
-  }
-
-  &__tooltip {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-  }
-
-  &__address {
-    border-radius: 3px;
-    background-color: $alto;
-    color: $scorpion;
-    font-size: 14px;
-    line-height: 12px;
-    padding: 4px 12px;
-    font-weight: 300;
-    cursor: pointer;
-    flex: 0 0 auto;
-
-    &__pressed {
-      background-color: $manatee,
-    }
-  }
-
-  &__sidebar-close {
-
-    @media screen and (max-width: 575px) {
-      &::after {
-        content: '\00D7';
-        font-size: 40px;
-        color: $tundora;
-        position: absolute;
-        top: 12px;
-        left: 12px;
-        cursor: pointer;
-      }
-    }
-  }
-
-  &__add-token-button {
-    flex: 0 0 auto;
-    margin: 36px auto;
-    background: none;
-    padding: .7rem 2rem;
-    transition: border-color .3s ease;
-
-    &:hover {
-      border-color: $curious-blue;
-    }
   }
 }
 
@@ -174,7 +94,7 @@ $wallet-view-bg: $alabaster;
   }
 }
 
-.wallet-view.sidebar {
+.wallet-view.sidebar-right {
   flex: 1 0 230px;
   background: rgb(250, 250, 250);
   z-index: $sidebar-z-index;
@@ -190,20 +110,11 @@ $wallet-view-bg: $alabaster;
   box-shadow: rgba(0, 0, 0, .15) 2px 2px 4px;
   width: 85%;
   height: calc(100% - 56px);
-}
 
-.sidebar-overlay {
-  z-index: $sidebar-overlay-z-index;
-  position: fixed;
-  // top: 41px;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-  visibility: visible;
-  background-color: rgba(0, 0, 0, .3);
+  [dir='rtl'] & {
+    /* rtl:ignore */
+    left: 15%;
+  }
 }
 
 // main-container media queries
@@ -253,28 +164,14 @@ $wallet-view-bg: $alabaster;
   }
 
   .main-container {
-    // margin-top: 41px;
-    height: 100%;
     width: 100%;
     overflow-y: auto;
     background-color: $white;
   }
-}
 
-// wallet view
-.account-name {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 20px;
-  color: $black;
-  margin-top: 8px;
-  margin-bottom: .9rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  width: 100%;
-  padding: 0 8px;
-  text-align: center;
+  .main-container-wrapper {
+    flex: 1;
+  }
 }
 
 // account options dropdown
@@ -289,7 +186,7 @@ $wallet-view-bg: $alabaster;
 }
 
 .token-balance__amount {
-  padding-right: 6px;
+  padding: 0 6px;
 }
 
 // first time
@@ -332,4 +229,13 @@ $wallet-view-bg: $alabaster;
   justify-content: center;
   align-items: center;
   flex: 1 0 auto;
+}
+
+.first-view-main-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding: 0 10px;
+  background: white;
 }

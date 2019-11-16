@@ -141,11 +141,11 @@
 }
 
 .cursor-pointer:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .cursor-pointer:active {
-  transform: scale(.95);
+  transform: scale(.97);
 }
 
 .cursor-disabled {
@@ -165,7 +165,7 @@
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .text-transform-uppercase {
